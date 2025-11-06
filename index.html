@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adtrian — Film Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+  <!-- Custom cursor elements -->
+  <div id="cursor"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">ADTRIAN</div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">About</a>
+      </nav>
+    
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <!-- Looping background video: replace assets/hero.mp4 with your video -->
+      <video id="hero-video" class="hero-video" autoplay muted loop playsinline>
+        <source src="assets/hero.mp4" type="video/mp4">
+        <!-- Fallback image -->
+        <img src="assets/hero.jpg" alt="Hero background">
+      </video>
+
+      <div class="hero-overlay container">
+        <h1 class="reveal">Holla</h1>
+        <p class="reveal lead">video virtuoso by day, web wizard by night. crafting digital experiences through code and creativity.</p>
+        <div class="hero-cta reveal">
+          <a class="btn" href="portfolio.html">View Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro container">
+      <div class="grid">
+        <div class="card reveal">
+          <h3>About</h3>
+          <p>I'm a film editor specializing in narrative pacing, seamless continuity, and cinematic color timing. Available for freelance and collaborative projects.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Services</h3>
+          <ul>
+            <li>TV Series Editing</li>
+            <li>Commercial & Promo Editing</li>
+            <li>Color Grading & Motion Graphics</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h3>Contact</h3>
+          <p id="contact">Email: hello@adtrian.com</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured container">
+      <h2 class="section-title reveal">Selected Projects</h2>
+      <div class="projects-grid">
+        <!-- 3 featured thumbnails -->
+        <a class="proj reveal" href="portfolio.html#p1">
+          <img src="assets/mnc.jpg">
+          <div class="proj-info">
+            <h4>TV Series — Episode 1</h4>
+            <p>Editor</p>
+          </div>
+        </a>
+        <a class="proj reveal" href="portfolio.html#p2">
+          <img src="assets/kg.jpg">
+          <div class="proj-info">
+            <h4>TV Series — Episode 3</h4>
+            <p>Editor</p>
+          </div>
+        </a>
+        <a class="proj reveal" href="portfolio.html#p3">
+          <img src="assets/connect.png">
+          <div class="proj-info">
+            <h4>Commercial Cut</h4>
+            <p>Editor</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Adtrian</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
